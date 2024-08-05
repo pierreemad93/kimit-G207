@@ -1,0 +1,26 @@
+@import 'color-palatte';
+@import 'config';
+@import 'buttons' ;
+.services {
+    text-align: center;
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+        color: $gray;
+    }
+    &-content {
+        display: flex;
+        justify-content: space-around;
+
+        .icon {
+            color: $white;
+            background-color: $primary-color;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            border-radius: 50%;
+        }
+    }
+}

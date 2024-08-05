@@ -1,0 +1,30 @@
+%btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+    color: $white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    @extend %btn;
+    background-color: $primary-color;
+
+    &:hover {
+        transition: all 0.5s ease-in-out;
+        background-color: lighten($primary-color, 10%);
+    }
+
+}
+
+.btn-danger {
+    @extend %btn;
+    background-color: $danger-color;
+
+    &:hover {
+        transition: all 0.5s ease-in-out;
+        background-color: lighten($danger-color, 10%);
+    }
+}
